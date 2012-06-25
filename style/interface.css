@@ -1,0 +1,191 @@
+@font-face
+{
+	font-family : GreatLakes;
+
+	src : url(../resource/fonts/GreatLakesNF.ttf)
+}
+
+body
+{
+	background : url(../resource/graphics/body.jpg);
+}
+
+section.base
+{
+	position : absolute;
+
+	left : 50%;
+	top  : 50%;
+
+	width  : 800px;
+	height : 600px;
+
+	margin-left : -400px;
+	margin-top  : -300px;
+
+	border        : thick solid #303030;
+	border-radius : 10px;
+
+	background : #404040;
+
+	font-family : GreatLakes;
+	font-weight : normal;
+	font-size   : 20px;
+
+	text-align : center;
+
+	box-shadow : 0 0 30px 5px #303030 inset;
+}
+
+section.base h1
+{
+	font-family : GreatLakes;
+	font-size   : 40px;
+	font-weight : normal;
+	color : white;
+}
+
+ul.menu
+{
+	position : relative;
+
+	width  : 75%;
+	height : 50px;
+
+	margin  : 20px auto;
+	padding : 0;
+}
+
+ul.menu li
+{
+	display : inline-block;
+
+	position : relative;
+
+	height : 25px;
+	width  : 120px;
+
+	margin : 0 10px 18px 0;
+
+	font-weight : bold;
+	line-height : 25px;
+	text-align  : center;
+	text-shadow : 0px 1px 0px #fafafa;
+
+	border-radius : 3px;
+	border-bottom : 4px solid #b2b1b1;
+
+	background : #eee;
+	background : -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e2e2e2));
+	box-shadow : inset 1px 1px 0 #f5f5f5;
+
+	color : #555;
+}
+
+ul.menu li:before,
+ul.menu li:after
+{
+	content : '';
+
+	position : absolute;
+	left   : -1px;
+	bottom : -1px;
+
+	height : 25px;
+	width  : 120px;
+
+	border        : 1px solid #cbcbcb;
+	border-bottom : 1px solid #a5a5a5;
+
+	border-radius : 3px;
+}
+
+ul.menu li:before
+{
+	height : 23px;
+	bottom : -4px;
+
+	border-top    : 0;
+	border-radius : 0 0 3px 3px;
+
+	box-shadow : 0 1px 1px 0px #bfbfbf;
+}
+
+ul.menu li:hover
+{
+	background : #e2e2e2;
+	background : -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#eee));
+	background : -moz-linear-gradient(top,  #e2e2e2,  #eee);
+
+	color : black;
+
+	cursor : pointer;
+}
+
+#calibrator
+{
+	display : block;
+}
+
+div#library
+{
+	position : relative;
+
+	width  : 75%;
+	height : 200px;
+
+	margin  : 20px auto;
+    padding : 10px;
+
+	border-radius : 10px;
+	border        : thin solid #303030;
+
+	border-top-right-radius    : 0;
+	border-bottom-right-radius : 0;
+
+	background : #202040;
+
+	text-align  : left;
+	color       : white;
+	font-family : monospace;
+
+	overflow-y : scroll;
+}
+
+div#settings
+{
+	position : relative;
+
+	width  : 75%;
+	height : 100px;
+
+	border        : thin solid #303030;
+	border-radius : 10px;
+
+	margin : auto;
+}
+
+div#library:focus
+{
+	outline : none;
+}
+
+#generator
+{
+	display : none;
+}
+
+#output
+{
+	position : relative;
+
+	width  : 75%;
+	height : 200px;
+
+	border        : thin solid #303030;
+	border-radius : 10px;
+
+	margin : auto;
+	
+	overflow-y : scroll;
+}

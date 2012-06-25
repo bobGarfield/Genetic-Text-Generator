@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Genetic Text Generator</title>
+	<meta charset = "utf-8">
+
+	<link href = "style/interface.css" rel = "stylesheet"/>
+
+	<script src = "comp/utils.js">
+	</script>
+	<script src = "comp/Interface.js">
+	</script>
+	<script src = "comp/GeneticManager.js">
+	</script>
+	<script src = "comp/LibraryManager.js">
+	</script>
+	<script src = "comp/Controller.js">
+	</script>
+	<script src = "comp/Application.js">
+	</script>
+</head>
+
+<body>
+	<section class = "base" id = "calibrator">
+		<h1>calibrator</h1>
+
+		<div id = "settings">
+			<!-- TODO: Add configurable values -->
+		</div>
+
+		<div id = "library" contenteditable = "true">
+		</div>
+
+		<ul class = "menu">
+			<li id = "confirm">Confirm</li>
+		</ul>
+	</section>
+
+	<section class = "base" id = "generator">
+		<h1>Generator</h1>
+
+		<div id = "output">Click next
+		</div>
+
+		<ul class = "menu">
+			<li id = "next">Next</li>
+		</ul>
+	</section>
+</body>
+
+<script>
+	new Application
+</script>
